@@ -1,8 +1,8 @@
 import React from 'react';
-import {Greeting} from './components/greeting/Greeting';
-import {Header} from './components/header/Header';
+import './shared/css/Global.css'
 import {Routes} from './routes/Routes';
 import {Desktopnavigation} from './components/navigation/desktopnavigation/Desktopnavigation'
+import {Timer} from './components/timer/Timer'
 
 function App() {
   return (

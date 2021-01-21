@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable jsx-a11y/alt-text */
 import './Desktopnavigation.css'
 import Logotype from '../../../shared/images/logo.png'
 import { useHistory } from 'react-router-dom'
@@ -13,10 +15,11 @@ export const Desktopnavigation = () => {
 
             <ul>
                 <div className="navWrapper">
-                    <li><a href="/home">Hem</a></li>
-                    <li><a href="">Timer</a></li>
-                    <li><a href="">Övningar</a></li>
-                    <li><a  onClick={() => history.push('/about')}>Om oss</a></li>
+                    <li><a onClick={() => history.push('/RoutingPath.HomePage')}>Home</a></li>
+                    <li><a onClick={() => history.push('/timer')}>Timer</a></li>
+                    <li><a onClick={() => history.push('/exercises')}>Exercises</a></li>
+                    <li><a onClick={() => history.push('/about')}>About</a></li>
+                    <li><a onClick={() => history.push('/signin')}>Sign in</a></li>
                 </div>
             </ul>
 
