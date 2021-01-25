@@ -19,7 +19,7 @@ export const SignInPage = () => {
                 <input placeholder='username'
                     onChange={event => setLoginCredentials({ ...loginCredentials, username: event.target.value })} /> <br />
 
-                <input placeholder='password'
+                <input placeholder='password' type="password"
                     onChange={event => setLoginCredentials({ ...loginCredentials, password: event.target.value })} />
 
                 <button onClick={() => signIn()}>Sign in</button>

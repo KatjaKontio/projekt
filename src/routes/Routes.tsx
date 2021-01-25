@@ -14,10 +14,10 @@ export const Routes = (props: { children: React.ReactChild }) => {
             {children}
             <Switch>
                 <Route exact path={RoutingPath.homePage} component={HomePage} />
-                <Route exact path={'/home'} component={AboutPage} />
-                <Route exact path={'/timer'} component={TimerPage} />
-                <Route exact path={'/exercises'} component={ExercisesPage} />
-                <Route exact path={'/signin'} component={SignInPage} />
+                <Route exact path={RoutingPath.aboutPage} component={AboutPage} />
+                <Route exact path={RoutingPath.timerPage} component={TimerPage} />
+                <Route exact path={RoutingPath.exercisesPage} component={ExercisesPage} />
+                <Route exact path={RoutingPath.signinPage} component={SignInPage} />
                 <Route component={HomePage}/>
             </Switch>
         </BrowserRouter>
