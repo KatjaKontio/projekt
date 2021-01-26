@@ -7,6 +7,7 @@ import { UserContext } from '../shared/provider/UserProvider'
 export const SignInPage = () => {
     const history = useHistory()
     const [loginCredentials, setLoginCredentials] = useState<loginCredentials>({ username: '', password: '' })
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [authUser, setAuthUser] = useContext(UserContext)
 
     const signIn = () => {

@@ -5,10 +5,22 @@ import { TimerPage } from '../pages/TimerPage'
 import { ExercisesPage } from '../pages/ExercisesPage'
 import { SignInPage } from '../pages/SignInPage'
 import RoutingPath from './RoutingPath'
+import { UserContext } from '../shared/provider/UserProvider'
+import { useEffect, useContext } from 'react'
+
 
 
 export const Routes = (props: { children: React.ReactChild }) => {
+    const [authUser, setAuthUser] = useContext(UserContext)
     const { children } = props
+
+    useEffect(() => {
+        if (localStorage.getItem('user')) {
+            setAuthUser({ username: localStorage.getItem('user') })
+        }
+    }, [])
+
+
     return (
         <BrowserRouter>
             {children}
@@ -18,7 +30,7 @@ export const Routes = (props: { children: React.ReactChild }) => {
                 <Route exact path={RoutingPath.timerPage} component={TimerPage} />
                 <Route exact path={RoutingPath.exercisesPage} component={ExercisesPage} />
                 <Route exact path={RoutingPath.signinPage} component={SignInPage} />
-                <Route component={HomePage}/>
+                <Route component={HomePage} />
             </Switch>
         </BrowserRouter>
     )

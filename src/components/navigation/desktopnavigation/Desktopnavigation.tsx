@@ -6,7 +6,7 @@ import { useHistory } from 'react-router-dom'
 import RoutingPath from '../../../routes/RoutingPath'
 import { useContext } from 'react'
 import { UserContext } from '../../../shared/provider/UserProvider'
-import { Profile} from '../../profile/Profile'
+import { Profile } from '../../profile/Profile'
 
 
 export const Desktopnavigation = () => {
@@ -15,8 +15,8 @@ export const Desktopnavigation = () => {
 
     const displaySignInButtonOrUsernameDependingOnAuth = () => {
         return authUser
-            ? <Profile/> : 
-            <span onClick={() => history.push(RoutingPath.signinPage)}>Signin</span>
+            ?<div className='profile'> <Profile /></div> :
+            <span className='signInButton' onClick={() => history.push(RoutingPath.signinPage)}>Signin</span>
     }
     return (
         <div className='desktopNavigationWrapper'>

@@ -1,4 +1,4 @@
-img {
+.navigationLogotype {
     width: 110px;
     padding-left: 40px;
 }
@@ -24,4 +24,16 @@ a {
 
 .logotype, a {
     cursor: pointer;
+}
+
+.sigInButton,
+.profile {
+display: flex;
+flex-direction: row;
+
+}
+
+.navWrapper {
+    display: flex;
+    flex-direction: row;
 }
