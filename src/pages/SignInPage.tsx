@@ -3,6 +3,7 @@ import { loginCredentials } from '../shared/interface/Interface'
 import { useHistory } from 'react-router-dom'
 import RoutingPath from '../routes/RoutingPath'
 import { UserContext } from '../shared/provider/UserProvider'
+import { Signincomponent } from '../components/signin/Signincomponent'
 
 export const SignInPage = () => {
     const history = useHistory()
@@ -29,7 +30,10 @@ export const SignInPage = () => {
                 <button onClick={() => signIn()}>Sign in</button>
             </form>
 
+            <Signincomponent/>
         </div>
+
+       
 
         /**<div>
             <h1>{value}</h1>

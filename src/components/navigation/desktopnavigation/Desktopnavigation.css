@@ -1,8 +1,6 @@
-
-
 .navigationLogotype {
-    width: 80px;
-    padding-left: 40px;
+    width: 100px;
+    padding-left: 200px;
 }
 
 .desktopNavigationWrapper {
@@ -15,49 +13,21 @@
     height: 100px;
 }
 
-.navSpan {
-    display: flex; 
-    color: white;
-    cursor: pointer;
+.navigationWrapper {
+    display: flex;
     align-items: center;
 }
 
-.navWrapper {
-    display: flex;
-    justify-content: space-between;
-    height: 73px;
-}
-
- li {
-   display: flex;
-   padding: 10px 20px;
-}
-
-
-
-.navSpan {
-    color: #fff;
-    text-transform: uppercase;
+.signInButton {
     text-decoration: none;
-    letter-spacing: 0.15em;
-    
     display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-  }
-  .navSpan:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  .navSpan:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
+    margin-left: 50px;
+    margin-right: 200px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+    /* Green */
+    padding: 10px 20px;
+    border-radius: 5%;
+}

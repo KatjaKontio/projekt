@@ -7,6 +7,8 @@ import RoutingPath from '../../../routes/RoutingPath'
 import { useContext } from 'react'
 import { UserContext } from '../../../shared/provider/UserProvider'
 import { Profile } from '../../profile/Profile'
+import { ProfileDropdown } from '../../profile/profiledropdown/ProfileDropdown'
+import { NavigationTabs } from '../../navigation/navigationtabs/NavigationTabs'
 
 
 export const Desktopnavigation = () => {
@@ -16,7 +18,7 @@ export const Desktopnavigation = () => {
     const displaySignInButtonOrUsernameDependingOnAuth = () => {
         return authUser
             ? <div className='profile'> <Profile /></div> :
-            <span className='signInButton' onClick={() => history.push(RoutingPath.signinPage)}>Signin</span>
+            <span className='signInButton' onClick={() => history.push(RoutingPath.signinPage)}>Log in</span>
     }
     return (
         <div className='desktopNavigationWrapper'>
@@ -26,11 +28,9 @@ export const Desktopnavigation = () => {
             </div>
 
 
-            <div className="navWrapper">
-                < li><span className="navSpan" onClick={() => history.push(RoutingPath.homePage)}>Home</span> </li>
-                < li><span className="navSpan" onClick={() => history.push(RoutingPath.timerPage)}>Timer</span></li>
-                < li><span className="navSpan" onClick={() => history.push(RoutingPath.exercisesPage)}>Exercises</span></li>
-                < li><span className="navSpan" onClick={() => history.push(RoutingPath.aboutPage)}>About</span></li>
+            <div className="navigationWrapper">
+
+                <NavigationTabs />
                 {displaySignInButtonOrUsernameDependingOnAuth()}
             </div>
 

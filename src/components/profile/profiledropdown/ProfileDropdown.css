@@ -1,0 +1,19 @@
+.profileDropdown {
+    display:  none;
+    position: absolute;
+    border: 1px solid grey;
+    margin-top: 12px;
+}
+
+.profileSpan {
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-bottom: none;
+    padding: 10px 60px 10px 5px;
+}
+
+.profileSpan:hover {
+background-color: 	#F5F5F5;
+}
