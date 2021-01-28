@@ -4,19 +4,45 @@
 }
 
 .profileDropdown {
-    display: none;
+    display:  none;
     position: absolute;
-    background-color: red;
+    border: 1px solid grey;
+    margin-top: 12px;
 }
 
-.profileWrapper:hover .profileDropdown {
+.hoverDropdown:hover .profileDropdown {
     display: block;
-    background-color: green;
+    background-color: white;
 }
 
-.profileDropwdown, span {
-    display: block;
+.hoverDropdown {
+    height: 86px;
     cursor: pointer;
-    padding: 20px;
-    color: blue;
+}
+
+
+
+.profileWrapper {
+    padding:  0px 90px;
+}
+.profileUsername {
+    text-align: center;
+    color: white;
+}
+
+.profileSpan {
+    display: block;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    border-bottom: none;
+    padding: 10px 60px 10px 5px;
+}
+
+.profileSpan:hover {
+background-color: 	#F5F5F5;
+}
+
+.logoutButton {
+
 }

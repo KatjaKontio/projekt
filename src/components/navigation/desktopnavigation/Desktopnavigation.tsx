@@ -15,7 +15,7 @@ export const Desktopnavigation = () => {
 
     const displaySignInButtonOrUsernameDependingOnAuth = () => {
         return authUser
-            ?<div className='profile'> <Profile /></div> :
+            ? <div className='profile'> <Profile /></div> :
             <span className='signInButton' onClick={() => history.push(RoutingPath.signinPage)}>Signin</span>
     }
     return (
@@ -25,15 +25,15 @@ export const Desktopnavigation = () => {
                     src={Logotype} />
             </div>
 
-            <ul>
-                <div className="navWrapper">
-                    <li><a onClick={() => history.push(RoutingPath.homePage)}>Home</a></li>
-                    <li><a onClick={() => history.push(RoutingPath.timerPage)}>Timer</a></li>
-                    <li><a onClick={() => history.push(RoutingPath.exercisesPage)}>Exercises</a></li>
-                    <li><a onClick={() => history.push(RoutingPath.aboutPage)}>About</a></li>
-                    {displaySignInButtonOrUsernameDependingOnAuth()}
-                </div>
-            </ul>
+
+            <div className="navWrapper">
+                < li><span className="navSpan" onClick={() => history.push(RoutingPath.homePage)}>Home</span> </li>
+                < li><span className="navSpan" onClick={() => history.push(RoutingPath.timerPage)}>Timer</span></li>
+                < li><span className="navSpan" onClick={() => history.push(RoutingPath.exercisesPage)}>Exercises</span></li>
+                < li><span className="navSpan" onClick={() => history.push(RoutingPath.aboutPage)}>About</span></li>
+                {displaySignInButtonOrUsernameDependingOnAuth()}
+            </div>
+
 
 
         </div>

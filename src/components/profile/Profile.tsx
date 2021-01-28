@@ -6,12 +6,14 @@ export const Profile = () => {
     const [authUser, setAutUser] = useContext(UserContext)
     return (
         <div className='profileWrapper'>
+            <div className="hoverDropdown">
             <img className='profileImg' src={'https://thispersondoesnotexist.com/image'} alt={''} />
-            <div>{authUser.username}</div>
+            <div className='profileUsername'>{authUser.username}</div>
             <div className='profileDropdown'>
-                <span>alt 1</span>
-                <span>alt 2</span>
-                <span>alt 3</span>
+                <span className='profileSpan'>Profile</span>
+                <span className='profileSpan'>Settings</span>
+                <span className='profileSpan logoutButton'>Log out</span>
+                </div>
             </div>
         </div>
     )

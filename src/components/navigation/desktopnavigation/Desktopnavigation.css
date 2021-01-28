@@ -1,39 +1,63 @@
+
+
 .navigationLogotype {
-    width: 110px;
+    width: 80px;
     padding-left: 40px;
 }
 
 .desktopNavigationWrapper {
     background-color: #3bb78f;
     background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
-li {
-    display: inline-flex;
-    padding: 10px 20px;
-}
-
-a {
-    text-decoration: none;
+.navSpan {
+    display: flex; 
     color: white;
-}
-
-.logotype, a {
     cursor: pointer;
-}
-
-.sigInButton,
-.profile {
-display: flex;
-flex-direction: row;
-
+    align-items: center;
 }
 
 .navWrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    height: 73px;
 }
+
+ li {
+   display: flex;
+   padding: 10px 20px;
+}
+
+
+
+.navSpan {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .navSpan:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .navSpan:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
