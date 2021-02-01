@@ -5,12 +5,13 @@ import { Desktopnavigation } from './components/navigation/desktopnavigation/Des
 import { Timer } from './components/timer/Timer'
 import { UserProvider } from './shared/provider/UserProvider';
 import { Signincomponent} from './components/signin/Signincomponent'
+import { Navigation} from './components/navigation/Navigation'
 
 function App() {
   return (
     <UserProvider>
       <Routes>
-        <Desktopnavigation />
+        <Navigation/>
       </Routes>
     </UserProvider>
 
