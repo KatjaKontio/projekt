@@ -7,14 +7,18 @@
     background: transparent;
     border: none;
     cursor: pointer;
-    padding: 0;
     box-sizing: border-box;
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-right: 50px;
+    padding-top: 12px;
 }
 
 .toggle-button_line {
     width: 30px;
     height: 2px;
     background: white;
+}
+
+.hamburger-icon {
+    color: white;
+    cursor: pointer;
 }
