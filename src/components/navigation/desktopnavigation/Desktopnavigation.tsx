@@ -7,13 +7,12 @@ import RoutingPath from '../../../routes/RoutingPath'
 import { useContext } from 'react'
 import { UserContext } from '../../../shared/provider/UserProvider'
 import { Profile } from '../../profile/Profile'
-import { ProfileDropdown } from '../../profile/profiledropdown/ProfileDropdown'
 import { NavigationTabs } from '../../navigation/navigationtabs/NavigationTabs'
 
 
 export const Desktopnavigation = () => {
     const history = useHistory();
-    const [authUser, setAuthUser] = useContext(UserContext)
+    const [authUser, setAuthUser ] = useContext(UserContext)
 
     const displaySignInButtonOrUsernameDependingOnAuth = () => {
         return authUser

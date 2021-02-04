@@ -1,9 +1,9 @@
 import { useState, useContext } from 'react'
-import { loginCredentials } from '../shared/interface/Interface'
+import { loginCredentials } from '../../shared/interface/Interface'
 import { useHistory } from 'react-router-dom'
-import RoutingPath from '../routes/RoutingPath'
-import { UserContext } from '../shared/provider/UserProvider'
-import { Signincomponent } from '../components/signin/Signincomponent'
+import RoutingPath from '../../routes/RoutingPath'
+import { UserContext } from '../../shared/provider/UserProvider'
+import { Signincomponent } from './signin/Signincomponent'
 
 export const SignInPage = () => {
     const history = useHistory()

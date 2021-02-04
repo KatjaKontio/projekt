@@ -1,4 +1,4 @@
-import { ExercisesComponent } from "../components/exercises/ExercisesComponent"
+import { ExercisesComponent } from "./exercisescomponent/ExercisesComponent"
 
 export const ExercisesPage = () => {
     return (

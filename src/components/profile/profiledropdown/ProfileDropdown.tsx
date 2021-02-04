@@ -19,7 +19,6 @@ history.push(RoutingPath.homePage)
         <div>
             <div className='profileDropdown'>
                 <span className='profileSpan'>Profile</span>
-                <span className='profileSpan'>Settings</span>
                 <span className='profileSpan logoutButton' onClick={() => logout()}>Log out</span>
             </div>
         </div>

@@ -12,12 +12,9 @@
     height: 86px;
     cursor: pointer;
     text-align: center;
+    display: inline;
 }
 
-.profileWrapper {
-    padding-right: 200px;
-    padding-left: 50px;
-}
 .profileUsername {
   
     color: white;
