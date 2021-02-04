@@ -22,7 +22,7 @@ export const Desktopnavigation = () => {
     return (
         <div className='desktopNavigationWrapper'>
             <div className="logoWrapper">
-                <img onClick={() => history.push('/home')} className='navigationLogotype'
+                <img onClick={() => history.push(RoutingPath.homePage)} className='navigationLogotype'
                     src={Logotype} />
             </div>
 

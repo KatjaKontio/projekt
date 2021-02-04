@@ -12,6 +12,7 @@ const element = <FontAwesomeIcon icon={faTimes} />
 export const SideBar = (props: { drawerIsOpen: boolean, drawerHandler: Function }) => {
 
     const history = useHistory()
+    
     const handleRedirect = (selectedView: any) => {
         history.push(selectedView)
         props.drawerHandler(false)
